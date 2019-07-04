@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScriptExport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.kaseya.com/vsa/2008/12/Scripting">
+  <Procedure name="Script name goes here" treePres="3" id="" folderId="" treeFullPath="myProcedures">
+    <Body description="">
+      <If description="">
+        <Condition name="True" />
+        <Then>
+          <Statement name="ExecuteShellCommand" continueOnFail="false" osType="MacOS">
+            <Parameter xsi:type="StringParameter" name="Command" value="BASH COMMANDS GO IN THESE QUOTES HERE, NOTE THAT YOU CAN USE ONLY 1 DELIMITER IN HERE AND ITS '' SO IF YOU HAVE TO QUOTE SOMETHING USE SINGLE QUOTES" />
+            <Parameter xsi:type="EnumParameter" name="ExecuteAccount" value="System" />
+            <Parameter xsi:type="BooleanParameter" name="Is64Bit" value="False" />
+          </Statement>
+          <Statement name="ExecuteShellCommand" continueOnFail="false" osType="MacOS">
+            <Parameter xsi:type="StringParameter" name="Command" value="ADDITIONAL LINES CAN BE ADDED IN ADDITION STATEMENT SECTIONS LIKE THIS. BASH COMMANDS GO IN THESE QUOTES HERE, NOTE THAT YOU CAN USE ONLY 1 DELIMITER IN HERE AND ITS '' SO IF YOU HAVE TO QUOTE SOMETHING USE SINGLE QUOTES" />
+            <Parameter xsi:type="EnumParameter" name="ExecuteAccount" value="System" />
+            <Parameter xsi:type="BooleanParameter" name="Is64Bit" value="False" />
+          </Statement>
+        </Then>
+      </If>
+    </Body>
+  </Procedure>
+</ScriptExport>
